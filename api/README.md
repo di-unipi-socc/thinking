@@ -1,16 +1,4 @@
-# ThoughtsSharing Application - REST API
-
-This repository contains the Java sources of the ThoughtsSharing application employed as use case for (fault-aware) management protocols. If you wish to reuse this application, please cite the following paper:
-```
-@inproceedings{Brogi2016,
- author = {Antonio Brogi and Andrea Canciani and Jacopo Soldani},
- title = {Fault-aware application management protocols},
- booktitle={Service-Oriented and Cloud Computing: Fifth European Conference, ESOCC 2016, Vienna, Austria, September 5-7, 2016. Proceedings},
- year={2016},
- publisher={Springer},
- note={{\em [To appear]}
-} 
-```
+# Thinking Application - REST API
 
 ## Documentation
 
