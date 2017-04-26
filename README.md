@@ -12,3 +12,11 @@ This repository contains the sources of the *Thinking* application, which has be
  doi = {10.1007/978-3-319-44482-6\_14}
 } 
 ```
+
+## Short description
+Thinking is composed by three main components: 
+1. An instance of MongoDB8 that is exploited to permanently store the collection of thoughts shared by end-users, 
+2. a Dropwizard-based [REST API](https://github.com/di-unipi-socc/thinking/tree/master/api) that permits remotely accessing the collection of shared thoughts, and
+3. a web-based [GUI](https://github.com/di-unipi-socc/thinking/tree/master/gui) that interacts with the REST API to permit retrieving and adding thoughts to the shared collection. 
+
+The MongoDB instance is obtained by instantiating a Mongo Docker container, while ThoughtsApi and ThoughtsGui are made concrete by hosting them on a Maven Docker container and on a Node Docker container.
