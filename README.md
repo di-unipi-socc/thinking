@@ -15,7 +15,7 @@ This repository contains the sources of the *Thinking* application, which has be
 
 ## Short description
 Thinking is composed by three main components: 
-1. An instance of MongoDB8 that is exploited to permanently store the collection of thoughts shared by end-users, 
+1. An instance of MongoDB that is exploited to permanently store the collection of thoughts shared by end-users, 
 2. a Dropwizard-based [REST API](https://github.com/di-unipi-socc/thinking/tree/master/api) that permits remotely accessing the collection of shared thoughts, and
 3. a web-based [GUI](https://github.com/di-unipi-socc/thinking/tree/master/gui) that interacts with the REST API to permit retrieving and adding thoughts to the shared collection. 
 
