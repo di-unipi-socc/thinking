@@ -1,7 +1,4 @@
-# Thinking Application - REST API
-
-## Documentation
-
+## Thinking Application - REST API
 The REST API is thought to run in a [maven](https://hub.docker.com/_/maven/) container. To set up the application please proceed as follows:
 
 (a) Download the repository. (In the following we will assume to have downloaded it in _$PWD/thoughts-api_) 
