@@ -1,0 +1,4 @@
+dbURL: "unknown"
+dbPort: "27017"
+dbName: "thoughtsSharing"
+collectionName: "thoughts"
