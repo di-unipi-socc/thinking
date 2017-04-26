@@ -1,0 +1,40 @@
+@font-face {
+    font-family: titleFont;
+    src: url(LoveYaLikeASister.ttf);
+}
+
+@font-face {
+    font-family: titleFontSolid;
+    src: url(LoveYaLikeASisterSolid.ttf);
+}
+
+@font-face {
+    font-family: thoughtFont;
+    src: url(WaitingfortheSunrise.ttf);
+}
+
+h1,h2,h3 {
+	font-family: titleFontSolid;
+	text-align: center;
+}
+
+h4,h5,h6 {
+	font-family: titleFont;
+	text-align: center;
+}
+
+blockquote {
+	font-family: Times;
+	margin-top: 50pt;
+}
+
+p {
+	font-family: thoughtFont;
+	font-size: 130%;
+}
+
+.centered-div{
+	padding-top: 10pt;
+	margin-left:10%;
+	width: 80%;
+}

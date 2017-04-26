@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Thoughts</title>
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+	<script type="text/javascript" src="script/lib/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="script/lib/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="script/config/rest-api.js"></script>
+	<script type="text/javascript" src="script/main.js"></script>
+	
+	<script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</head>
+<body onload="loadThoughts()">
+	<div class="centered-div">
+		<h1>Thinking</h1>
+		<h6>A blog where people can openly share thoughts</h6>
+	</div>
+	<div id="thoughts-div" class="centered-div"></div>
+	<div style="text-align:center"><a data-toggle="modal" data-target="#add-thought" class="btn btn-info">Leave yours...</a></div>
+	<div id="add-thought" class="modal fade">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title">Share your thought</h4>
+	      </div>
+	      <div class="modal-body">
+		      <div class="form-horizontal">
+			      <h6>What are you thinking about?</h6>
+			      <textarea id="new-thought" class="form-control" rows="3" id="textArea"></textarea>
+		      </div>
+		      <div class="form-horizontal">
+			      <h6>What is your name?</h6>
+			      <textarea id="new-author" class="form-control" rows="3" id="textArea"></textarea>
+		      </div>
+		      <div class="form-horizontal">
+			      <h6>Where are you?</h6>
+			      <textarea id="new-location" class="form-control" rows="3" id="textArea"></textarea>
+		      </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Discard</button>
+	        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="saveNewThought()">Save</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>
