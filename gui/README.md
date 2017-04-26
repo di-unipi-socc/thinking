@@ -1,7 +1,4 @@
-# Thinking Application - NodeJS-based GUI
-
-## Documentation
-
+## Thinking Application - NodeJS-based GUI
 The web-based GUI is thought to be offered through a [node](https://hub.docker.com/_/node/) container. To set up the application please proceed as follows:
 
 (a) Download the repository. (In the following we will assume to have downloaded it in _$PWD/thoughts-gui_) 
