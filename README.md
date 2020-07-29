@@ -32,7 +32,7 @@ The REST API is thought to run in a [maven](https://hub.docker.com/_/maven/) con
 
 (a) Download the repository. (In the following we will assume to have downloaded it in `$PWD/thoughts-api`) 
 
-(b) Run a maven container (called `thoughtsapi`). The container should be run in _interactive mode_, by specifying the volume where to retrieve the API sources (e.g., `$PWD/thoughts-api`, which has to be mapped to `/thoughts-api`) and the host's port where to map the container's port `8080` (e.g., `8282`).
+(b) Run a maven container (called `thoughtsapi`). The container should be run in _interactive mode_, by specifying the volume where to retrieve the API sources (e.g., `$PWD/api`, which has to be mapped to `/thoughts-api`) and the host's port where to map the container's port `8080` (e.g., `8282`).
 ```
 docker run -it -v "$PWD/thoughts-api":/thoughts-api -p 8282:8080 --name thinkingapi maven /bin/bash
 ```
@@ -59,7 +59,7 @@ The web-based GUI is thought to be offered through a [node](https://hub.docker.c
 
 (b) Run a node container (called `thoughtsgui`) in interactive mode, by also indicating the host's port where to map the container's port `3000`.
 ```
-docker run -it -v "$PWD/thoughts-gui":/thoughts-gui -p 3000:3000 --name thinkinggui node /bin/bash
+docker run -it -v "$PWD/gui":/thoughts-gui -p 3000:3000 --name thinkinggui node /bin/bash
 ```
 
 (c) Install the web-based GUI in the container.
@@ -69,13 +69,15 @@ thoughts-gui/scripts/install.sh
 
 (d) Configure the web-based GUI to connect it to the running instance of the REST API:
 ```
-thoughts-api/scripts/configure.sh localhost 8282 thoughts
+thoughts-gui/scripts/configure.sh localhost 8282 thoughts
 ``` 
 
 (e) Start the NodeJS server offering the web-based GUI.
 ```
 thoughts-gui/scripts/start.sh
 ```
+
+Once started, the web-based GUI can be accessed by connecting to [https://localhost:3000/thoughts.html](https://localhost:3000/thoughts.html)
 
 ## Management
 ### Mongo
